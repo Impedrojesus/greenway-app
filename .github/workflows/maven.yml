@@ -28,7 +28,7 @@ jobs:
         java-version: '11'
 
     - name: Move to the correct directory
-      run: cd greenway-app/greenway-gateway
+      run: cd greenway-app/​greenway-main/​pom.xml
 
     - name: Cache Maven packages
       uses: actions/cache@v3
