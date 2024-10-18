@@ -28,8 +28,8 @@ jobs:
         distribution: 'adopt'
         java-version: '17'
 
-    - name: Change directory to app (substitua 'app' pelo nome correto da pasta)
-      run: cd 
+    - name: Change directory to app 
+      run: cd greenway-gateway
 
     - name: Cache Maven packages
       uses: actions/cache@v3
