@@ -29,7 +29,7 @@ jobs:
         java-version: '17'
 
     - name: Change directory to app 
-      run: cd greenway-gateway
+      run: cd greenway-app/greenway-gateway
 
     - name: Cache Maven packages
       uses: actions/cache@v3
