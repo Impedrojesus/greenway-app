@@ -5,7 +5,6 @@
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
-
 name: Java CI with Maven
 
 on:
@@ -22,13 +21,13 @@ jobs:
     - name: Check out the repository
       uses: actions/checkout@v3
 
-    - name: Set up JDK 17
+    - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
         distribution: 'adopt'
-        java-version: '17'
+        java-version: '11'
 
-    - name: Change directory to app 
+    - name: Move to the correct directory
       run: cd greenway-app/greenway-gateway
 
     - name: Cache Maven packages
@@ -44,3 +43,7 @@ jobs:
 
     - name: Run tests
       run: mvn test
+
+
+     
+  
